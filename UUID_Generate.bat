@@ -9,6 +9,4 @@ for /l %%0 in (1,1,64) do (
 	set UUID=!UUID!!RAND!
 )
 set RAND=
-
-rem Format the UUID
 set UUID=%UUID:~,8%-%UUID:~8,4%-%UUID:~12,4%-%UUID:~16,4%-%UUID:~20,12%
